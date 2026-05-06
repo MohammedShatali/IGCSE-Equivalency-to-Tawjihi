@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>IGCSE Equivalency Calculator</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+<body>
+  <h1>IGCSE / IAL Equivalency Calculator</h1>
+
+  <form id="calcForm">
+      <label for="Country">Select country:</label>
+      <select id="Country">
+        <option>Jordan</option>
+      </select>
+      <br><br>
+
+    <label for="board">O level Exam Board:</label>
+    <select id="board">
+      <option value="cambridge">Cambridge</option>
+      <option value="Oxford">Oxford AQA</option>
+      <option value="edexcel">Edexcel</option>
+    </select>
+    <br><br>
+
+    <label>Enter 6 IGCSE Grades:</label><br>
+    <div id="igcse-grades">
+      <input type="text" class="grade" placeholder="Grade 1 (A*-U)">
+      <input type="text" class="grade" placeholder="Grade 2 (A*-U)">
+      <input type="text" class="grade" placeholder="Grade 3 (A*-U)">
+      <input type="text" class="grade" placeholder="Grade 4 (A*-U)">
+      <input type="text" class="grade" placeholder="Grade 5 (A*-U)">
+      <input type="text" class="grade" placeholder="Grade 6 (A*-U)">
+    </div>
+    <br>
+
+    <label>Enter 2 IAL Grades:</label><br>
+    <div id="ial-grades">
+      <input type="text" class="ial" placeholder="IAL 1 (A*-U)">
+      <input type="text" class="ial" placeholder="IAL 2 (A*-U)">
+    </div>
+    <br>
+
+    <button type="button" onclick="calculate()">Calculate Equivalency</button>
+  </form>
+
+  <h3 id="result"></h3>
+
+  <script src="newscript.js"></script>
+</body>
+
+  </body>
+</html>
